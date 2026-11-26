@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Request a Service · ONE OFFICE</title>
+<meta name="description" content="Request a government service and receive a Tracking Number to follow it.">
+<meta name="theme-color" content="#0f5b61">
+<meta property="og:title" content="ONE OFFICE — One Stop Government Services Facilitation Center">
+<meta property="og:description" content="Request a government service and receive a Tracking Number to follow it.">
+<meta property="og:image" content="assets/img/logo.png">
+<link rel="icon" type="image/png" href="assets/img/favicon.png?v=1795682024">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="assets/css/style.css?v=1795682502">
+<script>
+  document.documentElement.classList.add('js');
+  try { var t = localStorage.getItem('oo-theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body class="page-request">
+<div class="demo-banner" role="note"><i class="bi bi-info-circle"></i> Demo preview – forms, request tracking and the admin panel work only in the full PHP version.</div>
+<div class="topstrip">
+  <div class="container topstrip-inner">
+    <span><i class="bi bi-stars"></i> One Office – Many Services</span>
+    <span class="hide-sm">
+      <a href="tel:+252610000000"><i class="bi bi-telephone"></i> +252 61 000 0000</a>      <span><i class="bi bi-clock"></i> Sat – Thu: 8:00 AM – 5:00 PM</span>    </span>
+  </div>
+</div>
+<header class="nav" id="top">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo" aria-label="ONE OFFICE – home">
+      <img src="assets/img/logo.png?v=1795682024" alt="ONE OFFICE" width="886" height="256">
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Main">
+              <a href="index.html" class="">Home</a>
+              <a href="about.html" class="">About</a>
+              <a href="services.html" class="">Services</a>
+              <a href="track.html" class="">Track Request</a>
+              <a href="index.html#contact" class="">Contact</a>
+                    <a href="request.html" class="btn btn-accent btn-sm nav-cta"><i class="bi bi-send"></i> Request a Service</a>
+          </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode"><i class="bi bi-moon-stars"></i></button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><i class="bi bi-list"></i></button>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="page-hero small">
+    <div class="container">
+      <span class="eyebrow">Request a service</span>
+      <h1>Request a service</h1>
+      <p class="lead">Fill in the form below. You will instantly receive a Tracking Number to follow your request. Our team will contact you to confirm the required documents and the fees.</p>    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="container request-grid">
+          <form class="contact-form request-form" method="post" action="request.html" novalidate data-validate>
+                        <div class="hp" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+
+        <h3 class="form-step"><span>1</span> The service</h3>
+        <label>Which service do you need? *
+          <select name="service_id" required>
+            <option value="">— Choose a service —</option>
+                          <optgroup label="Companies &amp; Institutions">
+                                  <option value="1" >Company &amp; business registration</option>
+                                  <option value="2" >Business licenses</option>
+                                  <option value="3" >License renewal</option>
+                                  <option value="4" >Tax Registration</option>
+                                  <option value="5" >Tax Clearance Certificate</option>
+                                  <option value="6" >Government tax payments</option>
+                                  <option value="7" >Tax receipts &amp; documents</option>
+                                  <option value="8" >Business compliance documents</option>
+                                  <option value="9" >Company document certification</option>
+                                  <option value="10" >Contract certification</option>
+                                  <option value="11" >Court documents</option>
+                                  <option value="12" >Court document submission &amp; follow-up</option>
+                                  <option value="13" >Institutional documents</option>
+                                  <option value="14" >Document collection &amp; delivery</option>
+                              </optgroup>
+                          <optgroup label="Education">
+                                  <option value="15" >Secondary school certificate</option>
+                                  <option value="16" >Certificate verification</option>
+                                  <option value="17" >Education certificate certification</option>
+                                  <option value="18" >Academic documents</option>
+                                  <option value="19" >Lost certificates</option>
+                                  <option value="20" >Exam results verification</option>
+                              </optgroup>
+                          <optgroup label="Civil Documents">
+                                  <option value="21" >Birth certificate</option>
+                                  <option value="22" >Marriage certificate</option>
+                                  <option value="23" >Death certificate</option>
+                                  <option value="24" >Official letters &amp; records</option>
+                                  <option value="25" >Document verification</option>
+                              </optgroup>
+                          <optgroup label="Passport &amp; Travel">
+                                  <option value="26" >Passport applications</option>
+                                  <option value="27" >Visa documents</option>
+                                  <option value="28" >Embassy services</option>
+                                  <option value="29" >Certification &amp; legalization</option>
+                              </optgroup>
+                          <optgroup label="Diaspora Services">
+                                  <option value="30" >Certificate issuance</option>
+                                  <option value="31" >Certificate verification</option>
+                                  <option value="32" >Court documents</option>
+                                  <option value="33" >Civil documents</option>
+                                  <option value="34" >Tax documents</option>
+                                  <option value="35" >Business registration</option>
+                                  <option value="36" >Business licenses</option>
+                                  <option value="37" >Government letters</option>
+                                  <option value="38" >Somali Visa</option>
+                                  <option value="39" >Document delivery</option>
+                              </optgroup>
+                          <optgroup label="Business Support &amp; Advisory">
+                                  <option value="40" >Concept Note</option>
+                                  <option value="41" >Company Profile</option>
+                                  <option value="42" >Professional Presentation</option>
+                                  <option value="43" >Government Service Mapping</option>
+                                  <option value="44" >Government Relationships &amp; Focal Points</option>
+                                  <option value="45" >Service SOPs &amp; Pricing</option>
+                                  <option value="46" >Startup Budget &amp; Business Plan</option>
+                                  <option value="47" >Office &amp; Staff Setup</option>
+                                  <option value="48" >Pilot Services</option>
+                                  <option value="49" >Official Launch &amp; Expansion</option>
+                              </optgroup>
+                      </select>
+        </label>
+        <fieldset class="radio-cards">
+          <legend>I am requesting as *</legend>
+                      <label><input type="radio" name="customer_type" value="individual" checked><span>Individual</span></label>
+                      <label><input type="radio" name="customer_type" value="business" ><span>Company / Business</span></label>
+                      <label><input type="radio" name="customer_type" value="organization" ><span>Organization / NGO</span></label>
+                      <label><input type="radio" name="customer_type" value="diaspora" ><span>Somali living abroad</span></label>
+                  </fieldset>
+
+        <h3 class="form-step"><span>2</span> Your details</h3>
+        <div class="row-2">
+          <label>Full name *<input type="text" name="full_name" required minlength="3" maxlength="100" value="" autocomplete="name"></label>
+          <label>Phone / WhatsApp *<input type="tel" name="phone" required maxlength="40" value="" placeholder="+252 …" autocomplete="tel"></label>
+        </div>
+        <div class="row-2">
+          <label>Email<input type="email" name="email" maxlength="150" value="" autocomplete="email"></label>
+          <label>City / Country<input type="text" name="location" maxlength="120" value="" placeholder="Mogadishu, London, Minneapolis…"></label>
+        </div>
+
+        <h3 class="form-step"><span>3</span> Details</h3>
+        <label>Tell us what you need<textarea name="details" rows="5" maxlength="3000" placeholder="e.g. I need my secondary school certificate from 2015…"></textarea></label>
+        <label class="check-line"><input type="checkbox" name="consent" value="1" required > I agree that ONE OFFICE may contact me about this request by phone or email.</label>
+        <button type="submit" class="btn btn-accent btn-block"><span>Submit request</span> <i class="bi bi-send"></i></button>
+      </form>
+
+      <aside class="request-side">
+        <div class="side-card">
+          <h3><i class="bi bi-signpost-split"></i> What happens next?</h3>
+          <ol class="mini-steps">
+            <li>You instantly receive a <b>Tracking Number</b>.</li>
+            <li>Our team contacts you to confirm the required documents and the fees.</li>
+            <li>We prepare, submit to the institution and follow up.</li>
+            <li>When it is ready, we deliver it to you.</li>
+          </ol>
+        </div>
+        <div class="side-card">
+          <h3><i class="bi bi-receipt"></i> Fees</h3>
+          <p class="muted small">Service Fee, Government Fee, Delivery Fee and Processing Fees are kept separate. You receive a receipt for every payment.</p>
+        </div>
+                <div class="side-card">
+          <h3><i class="bi bi-headset"></i> Need help?</h3>
+          <a class="link-arrow" href="tel:+252610000000">+252 61 000 0000</a>
+        </div>
+              </aside>
+        </div>
+  </section>
+</main>
+
+<section class="values-band" aria-label="Our mission">
+  <div class="container values-inner">
+    <div><i class="bi bi-people"></i> Supporting Citizens</div>
+    <div><i class="bi bi-briefcase"></i> Enabling Businesses</div>
+    <div><i class="bi bi-bank"></i> Strengthening Government Services</div>
+    <div><i class="bi bi-bar-chart-line"></i> Driving Development</div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo"><img src="assets/img/logo.png?v=1795682024" alt="ONE OFFICE" loading="lazy"></a>
+      <p class="muted">One Stop Government Services Facilitation Center. One Office – Many Services.</p>
+      <p class="footer-quote">“One Office, Always at Your Service.”</p>
+          </div>
+    <div>
+      <h4>Services</h4>
+              <a href="services.html#cat-1">Companies &amp; Institutions</a>
+              <a href="services.html#cat-2">Education</a>
+              <a href="services.html#cat-3">Civil Documents</a>
+              <a href="services.html#cat-4">Passport &amp; Travel</a>
+              <a href="services.html#cat-5">Diaspora Services</a>
+              <a href="services.html#cat-6">Business Support &amp; Advisory</a>
+          </div>
+    <div>
+      <h4>Quick links</h4>
+      <a href="about.html">About us</a>
+      <a href="services.html">All services</a>
+      <a href="request.html">Request a service</a>      <a href="track.html">Track a request</a>
+      <a href="index.html#faq">FAQ</a>
+    </div>
+    <div>
+      <h4>Contact us</h4>
+      <ul class="footer-contact">
+        <li><i class="bi bi-telephone"></i><a href="tel:+252610000000">+252 61 000 0000</a></li>        <li><i class="bi bi-envelope"></i><a href="mailto:info@oneoffice.example">info@oneoffice.example</a></li>        <li><i class="bi bi-geo-alt"></i><span>km4, Mogadishu, Somalia</span></li>        <li><i class="bi bi-clock"></i><span>Sat – Thu: 8:00 AM – 5:00 PM</span></li>      </ul>
+    </div>
+  </div>
+  <div class="container copyright">© 2026 ONE OFFICE · One Office – Many Services</div>
+</footer>
+
+<a href="#top" class="to-top" id="toTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a>
+<script src="assets/js/main.js?v=1795689706"></script>
+<script src="assets/js/demo.js"></script>
+</body>
+</html>

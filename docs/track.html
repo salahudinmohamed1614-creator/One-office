@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Track Request · ONE OFFICE</title>
+<meta name="description" content="Follow the status of your request with your Tracking Number.">
+<meta name="theme-color" content="#0f5b61">
+<meta property="og:title" content="ONE OFFICE — One Stop Government Services Facilitation Center">
+<meta property="og:description" content="Follow the status of your request with your Tracking Number.">
+<meta property="og:image" content="assets/img/logo.png">
+<link rel="icon" type="image/png" href="assets/img/favicon.png?v=1795682024">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="assets/css/style.css?v=1795682502">
+<script>
+  document.documentElement.classList.add('js');
+  try { var t = localStorage.getItem('oo-theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body class="page-track">
+<div class="demo-banner" role="note"><i class="bi bi-info-circle"></i> Demo preview – forms, request tracking and the admin panel work only in the full PHP version.</div>
+<div class="topstrip">
+  <div class="container topstrip-inner">
+    <span><i class="bi bi-stars"></i> One Office – Many Services</span>
+    <span class="hide-sm">
+      <a href="tel:+252610000000"><i class="bi bi-telephone"></i> +252 61 000 0000</a>      <span><i class="bi bi-clock"></i> Sat – Thu: 8:00 AM – 5:00 PM</span>    </span>
+  </div>
+</div>
+<header class="nav" id="top">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo" aria-label="ONE OFFICE – home">
+      <img src="assets/img/logo.png?v=1795682024" alt="ONE OFFICE" width="886" height="256">
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Main">
+              <a href="index.html" class="">Home</a>
+              <a href="about.html" class="">About</a>
+              <a href="services.html" class="">Services</a>
+              <a href="track.html" class="active" aria-current="page">Track Request</a>
+              <a href="index.html#contact" class="">Contact</a>
+                    <a href="request.html" class="btn btn-accent btn-sm nav-cta"><i class="bi bi-send"></i> Request a Service</a>
+          </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode"><i class="bi bi-moon-stars"></i></button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><i class="bi bi-list"></i></button>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="page-hero small">
+    <div class="container">
+      <span class="eyebrow">One Tracking Number</span>
+      <h1>Track your request</h1>
+      <p class="lead">Enter the Tracking Number you received and the phone number you used when submitting the request.</p>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="container track-wrap">
+      <form class="contact-form track-form" method="post" action="track.html">
+                <div class="row-2">
+          <label>Tracking Number *<input type="text" name="no" required maxlength="20" value="" placeholder="OO-261126-AB12" autocomplete="off" class="mono"></label>
+          <label>Phone number *<input type="tel" name="phone" required maxlength="40" value="" placeholder="+252 …" autocomplete="tel"></label>
+        </div>
+        <button class="btn btn-primary btn-block" type="submit"><i class="bi bi-search"></i> Track</button>
+      </form>
+
+            <div class="track-help">
+        <div class="side-card">
+          <h3><i class="bi bi-question-circle"></i> Don’t have a Tracking Number?</h3>
+          <p class="muted small">You receive a Tracking Number when you submit a request. If you lost it, contact us with your name and phone number.</p>
+          <a href="request.html" class="link-arrow">Request a new service <i class="bi bi-arrow-right"></i></a>        </div>
+      </div>
+          </div>
+  </section>
+</main>
+
+<section class="values-band" aria-label="Our mission">
+  <div class="container values-inner">
+    <div><i class="bi bi-people"></i> Supporting Citizens</div>
+    <div><i class="bi bi-briefcase"></i> Enabling Businesses</div>
+    <div><i class="bi bi-bank"></i> Strengthening Government Services</div>
+    <div><i class="bi bi-bar-chart-line"></i> Driving Development</div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo"><img src="assets/img/logo.png?v=1795682024" alt="ONE OFFICE" loading="lazy"></a>
+      <p class="muted">One Stop Government Services Facilitation Center. One Office – Many Services.</p>
+      <p class="footer-quote">“One Office, Always at Your Service.”</p>
+          </div>
+    <div>
+      <h4>Services</h4>
+              <a href="services.html#cat-1">Companies &amp; Institutions</a>
+              <a href="services.html#cat-2">Education</a>
+              <a href="services.html#cat-3">Civil Documents</a>
+              <a href="services.html#cat-4">Passport &amp; Travel</a>
+              <a href="services.html#cat-5">Diaspora Services</a>
+              <a href="services.html#cat-6">Business Support &amp; Advisory</a>
+          </div>
+    <div>
+      <h4>Quick links</h4>
+      <a href="about.html">About us</a>
+      <a href="services.html">All services</a>
+      <a href="request.html">Request a service</a>      <a href="track.html">Track a request</a>
+      <a href="index.html#faq">FAQ</a>
+    </div>
+    <div>
+      <h4>Contact us</h4>
+      <ul class="footer-contact">
+        <li><i class="bi bi-telephone"></i><a href="tel:+252610000000">+252 61 000 0000</a></li>        <li><i class="bi bi-envelope"></i><a href="mailto:info@oneoffice.example">info@oneoffice.example</a></li>        <li><i class="bi bi-geo-alt"></i><span>km4, Mogadishu, Somalia</span></li>        <li><i class="bi bi-clock"></i><span>Sat – Thu: 8:00 AM – 5:00 PM</span></li>      </ul>
+    </div>
+  </div>
+  <div class="container copyright">© 2026 ONE OFFICE · One Office – Many Services</div>
+</footer>
+
+<a href="#top" class="to-top" id="toTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a>
+<script src="assets/js/main.js?v=1795689706"></script>
+<script src="assets/js/demo.js"></script>
+</body>
+</html>
