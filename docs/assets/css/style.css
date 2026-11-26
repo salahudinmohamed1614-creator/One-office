@@ -325,6 +325,30 @@ p { margin: 0 0 1em; }
 .alert-error { background: #fee2e2; color: #991b1b; }
 .alert-warn { background: #ffedd5; color: #9a3412; display: flex; gap: .5rem; align-items: center; margin-top: 1rem; }
 
+/* Contact page */
+.contact-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 3rem; }
+.contact-card {
+  display: grid; gap: .2rem; padding: 1.4rem; border-radius: 18px; background: var(--surface); border: 1px solid var(--border);
+  box-shadow: var(--shadow); transition: transform .25s, border-color .25s; word-break: break-word;
+}
+a.contact-card:hover { transform: translateY(-4px); border-color: color-mix(in srgb, var(--brand) 40%, var(--border)); }
+.contact-card i { width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center; font-size: 1.3rem; color: #fff; margin-bottom: .6rem; background: linear-gradient(135deg, var(--brand), var(--brand-2)); }
+.contact-card:nth-child(even) i { background: linear-gradient(135deg, var(--accent), var(--accent-2)); }
+.contact-card small { color: var(--muted); font-weight: 600; }
+.contact-card b { font-size: 1.02rem; }
+.contact-page-grid { grid-template-columns: 1.6fr 1fr; gap: 2rem; }
+.form-title { font-size: 1.4rem; margin-bottom: 0; }
+.contact-form .form-title + .muted { margin: -.6rem 0 0; }
+.quick-links { list-style: none; margin: 0; padding: 0; display: grid; gap: .3rem; }
+.quick-links a { display: flex; align-items: center; gap: .6rem; padding: .6rem .7rem; border-radius: 10px; font-weight: 600; transition: background .2s, color .2s; }
+.quick-links a:hover { background: var(--bg-alt); color: var(--brand-ink); }
+.quick-links a i:first-child { color: var(--accent); }
+.quick-links a i:last-child { margin-left: auto; color: var(--muted); font-size: .85rem; }
+.contact-cta { display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap; padding: 2.2rem; border-radius: 24px; background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow); }
+.contact-cta h2 { margin-bottom: .3rem; }
+.contact-cta p { margin: 0; }
+.contact-cta-actions { display: flex; gap: .7rem; flex-wrap: wrap; }
+
 /* Values band + footer */
 .values-band { background: var(--accent); color: #fff; }
 .values-inner { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; padding-top: 1.1rem; padding-bottom: 1.1rem; font-weight: 700; }
@@ -345,6 +369,9 @@ p { margin: 0 0 1em; }
 .socials a { width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center; background: rgba(255,255,255,.08); }
 .socials a:hover { background: var(--accent); }
 .copyright { border-top: 1px solid rgba(255,255,255,.08); margin-top: 2.5rem; padding-top: 1.5rem; text-align: center; font-size: .9rem; color: #93b2b5; }
+
+.admin-link { color: #93b2b5; white-space: nowrap; }
+.admin-link:hover { color: var(--accent); }
 
 .to-top, .wa-float {
   position: fixed; right: 20px; bottom: 20px; width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center; z-index: 40;
@@ -501,7 +528,7 @@ p { margin: 0 0 1em; }
   .nav-links a:not(.btn) { padding: .9rem 0; border-bottom: 1px solid var(--border); }
   .nav-links a:not(.btn)::after { display: none; }
   .nav-cta { margin-top: 1rem; }
-  .hero-grid, .about-grid, .contact-grid, .fees-grid, .request-grid { grid-template-columns: 1fr; }
+  .hero-grid, .about-grid, .contact-grid, .contact-page-grid, .fees-grid, .request-grid { grid-template-columns: 1fr; }
   .hero { padding-top: 36px; }
   .hero-visual { min-height: 360px; max-width: 520px; width: 100%; margin: 0 auto; }
   .request-side { position: static; }
@@ -537,7 +564,8 @@ p { margin: 0 0 1em; }
   .tile { min-height: 140px; padding: 1.3rem 1rem; }
   .footer-grid, .values-inner { grid-template-columns: 1fr; }
   .cta-band { padding: 1.8rem 1.4rem; }
-  .cta-actions .btn { flex: 1; }
+  .cta-actions .btn, .contact-cta-actions .btn { flex: 1; }
+  .contact-cta { padding: 1.5rem; }
   .track-result { padding: 1.3rem; }
   .svc-cat-head { flex-direction: column; }
   .done-card { padding: 2rem 1.2rem; }

@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<link rel="stylesheet" href="assets/css/style.css?v=1795682502">
+<link rel="stylesheet" href="assets/css/style.css?v=1795694759">
 <script>
   document.documentElement.classList.add('js');
   try { var t = localStorage.getItem('oo-theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
@@ -39,7 +39,7 @@
               <a href="about.html" class="">About</a>
               <a href="services.html" class="">Services</a>
               <a href="track.html" class="">Track Request</a>
-              <a href="index.html#contact" class="">Contact</a>
+              <a href="contact.html" class="">Contact</a>
                     <a href="request.html" class="btn btn-accent btn-sm nav-cta"><i class="bi bi-send"></i> Request a Service</a>
           </nav>
     <div class="nav-actions">
@@ -374,41 +374,19 @@
     </div>
   </section>
   
-  <!-- CONTACT -->
+  <!-- CONTACT CTA -->
   <section class="section alt" id="contact">
-    <div class="container contact-grid">
-      <div class="reveal">
-        <span class="eyebrow">Contact</span>
-        <h2>Get in touch</h2>
-        <p class="muted">Have a question? Send us a message or visit our office – One Office, One Customer Service.</p>
-        <ul class="contact-list">
-          <li><i class="bi bi-telephone"></i><div><small>Phone</small><a href="tel:+252610000000">+252 61 000 0000</a></div></li>          <li><i class="bi bi-envelope"></i><div><small>Email</small><a href="mailto:info@oneoffice.example">info@oneoffice.example</a></div></li>          <li><i class="bi bi-geo-alt"></i><div><small>Address</small><span>km4, Mogadishu, Somalia</span></div></li>          <li><i class="bi bi-clock"></i><div><small>Opening hours</small><span>Sat – Thu: 8:00 AM – 5:00 PM</span></div></li>        </ul>
+    <div class="container">
+      <div class="contact-cta reveal">
+        <div>
+          <span class="eyebrow">Contact</span>
+          <h2>Have a question? Talk to us.</h2>
+          <p class="muted">Call us, visit our office or send a message – One Office, One Customer Service.</p>
+        </div>
+        <div class="contact-cta-actions">
+          <a class="btn btn-ghost" href="tel:+252610000000"><i class="bi bi-telephone"></i> +252 61 000 0000</a>          <a class="btn btn-primary" href="contact.html">Contact us <i class="bi bi-arrow-right"></i></a>
+        </div>
       </div>
-      <form class="contact-form reveal" id="contactForm" method="post" action="#" novalidate>
-                <div class="form-alert" id="formAlert" role="status" aria-live="polite">
-                  </div>
-        <div class="hp" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
-        <div class="row-2">
-          <label>Full name *<input type="text" name="name" required maxlength="100" value=""></label>
-          <label>Email *<input type="email" name="email" required maxlength="150" value=""></label>
-        </div>
-        <div class="row-2">
-          <label>Phone<input type="tel" name="phone" maxlength="40" value=""></label>
-          <label>Subject
-            <select name="subject">
-              <option value="General question">General question</option>
-                              <option value="Companies &amp; Institutions" >Companies &amp; Institutions</option>
-                              <option value="Education" >Education</option>
-                              <option value="Civil Documents" >Civil Documents</option>
-                              <option value="Passport &amp; Travel" >Passport &amp; Travel</option>
-                              <option value="Diaspora Services" >Diaspora Services</option>
-                              <option value="Business Support &amp; Advisory" >Business Support &amp; Advisory</option>
-                          </select>
-          </label>
-        </div>
-        <label>Message *<textarea name="message" rows="5" required minlength="10" maxlength="5000"></textarea></label>
-        <button type="submit" class="btn btn-primary btn-block"><span>Send message</span> <i class="bi bi-send"></i></button>
-      </form>
     </div>
   </section>
 </main>
@@ -444,6 +422,7 @@
       <a href="services.html">All services</a>
       <a href="request.html">Request a service</a>      <a href="track.html">Track a request</a>
       <a href="index.html#faq">FAQ</a>
+      <a href="contact.html">Contact us</a>
     </div>
     <div>
       <h4>Contact us</h4>
@@ -451,7 +430,7 @@
         <li><i class="bi bi-telephone"></i><a href="tel:+252610000000">+252 61 000 0000</a></li>        <li><i class="bi bi-envelope"></i><a href="mailto:info@oneoffice.example">info@oneoffice.example</a></li>        <li><i class="bi bi-geo-alt"></i><span>km4, Mogadishu, Somalia</span></li>        <li><i class="bi bi-clock"></i><span>Sat – Thu: 8:00 AM – 5:00 PM</span></li>      </ul>
     </div>
   </div>
-  <div class="container copyright">© 2026 ONE OFFICE · One Office – Many Services</div>
+  <div class="container copyright">© 2026 ONE OFFICE · One Office – Many Services    · <a href="admin.html" class="admin-link" rel="nofollow"><i class="bi bi-shield-lock"></i> Admin login</a></div>
 </footer>
 
 <a href="#top" class="to-top" id="toTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a>

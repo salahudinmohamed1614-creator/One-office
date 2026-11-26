@@ -34,7 +34,7 @@ site_header('Services', 'services', 'All ONE OFFICE services: companies, educati
   </section>
 
   <div class="container svc-page">
-    <p class="empty-search" id="svcEmpty" hidden><i class="bi bi-search"></i> No service found. Try another word or <a href="index.php#contact">contact us</a>.</p>
+    <p class="empty-search" id="svcEmpty" hidden><i class="bi bi-search"></i> No service found. Try another word or <a href="contact.php">contact us</a>.</p>
     <?php foreach ($categories as $c): $list = $byCat[(int) $c['id']] ?? []; if (!$list) continue; ?>
       <section class="svc-cat" id="cat-<?= (int) $c['id'] ?>" data-cat>
         <header class="svc-cat-head reveal">
@@ -69,7 +69,7 @@ site_header('Services', 'services', 'All ONE OFFICE services: companies, educati
       </div>
       <div class="cta-actions">
         <?php if ($requestsOn): ?><a href="request.php" class="btn btn-white">Request a service <i class="bi bi-arrow-right"></i></a><?php endif; ?>
-        <a href="index.php#contact" class="btn btn-outline-white">Contact us</a>
+        <a href="contact.php" class="btn btn-outline-white">Contact us</a>
       </div>
     </div>
   </div>

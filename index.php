@@ -31,9 +31,6 @@ $testimonials = $pdo->query('SELECT * FROM testimonials WHERE is_active = 1 ORDE
 $faqs = $pdo->query('SELECT * FROM faqs WHERE is_active = 1 ORDER BY sort_order, id')->fetchAll();
 $requestsOn = setting('requests_enabled', '1') === '1';
 
-$flashes = take_flashes();
-$old = $_SESSION['contact_old'] ?? [];
-unset($_SESSION['contact_old']);
 
 $steps = [
     ['bi-person', 'Customer', 'Your request', 'You bring us your need and your documents.'],
@@ -281,46 +278,20 @@ site_header('', 'home');
   </section>
   <?php endif; ?>
 
-  <!-- CONTACT -->
+  <!-- CONTACT CTA -->
   <section class="section alt" id="contact">
-    <div class="container contact-grid">
-      <div class="reveal">
-        <span class="eyebrow">Contact</span>
-        <h2>Get in touch</h2>
-        <p class="muted">Have a question? Send us a message or visit our office – One Office, One Customer Service.</p>
-        <ul class="contact-list">
-          <?php if (setting('phone') !== ''): ?><li><i class="bi bi-telephone"></i><div><small>Phone</small><a href="tel:<?= e(preg_replace('/[^0-9+]/', '', setting('phone'))) ?>"><?= e(setting('phone')) ?></a></div></li><?php endif; ?>
-          <?php if (setting('email') !== ''): ?><li><i class="bi bi-envelope"></i><div><small>Email</small><a href="mailto:<?= e(setting('email')) ?>"><?= e(setting('email')) ?></a></div></li><?php endif; ?>
-          <?php if (setting('address') !== ''): ?><li><i class="bi bi-geo-alt"></i><div><small>Address</small><span><?= e(setting('address')) ?></span></div></li><?php endif; ?>
-          <?php if (setting('hours') !== ''): ?><li><i class="bi bi-clock"></i><div><small>Opening hours</small><span><?= e(setting('hours')) ?></span></div></li><?php endif; ?>
-        </ul>
+    <div class="container">
+      <div class="contact-cta reveal">
+        <div>
+          <span class="eyebrow">Contact</span>
+          <h2>Have a question? Talk to us.</h2>
+          <p class="muted">Call us, visit our office or send a message – One Office, One Customer Service.</p>
+        </div>
+        <div class="contact-cta-actions">
+          <?php if (setting('phone') !== ''): ?><a class="btn btn-ghost" href="tel:<?= e(preg_replace('/[^0-9+]/', '', setting('phone'))) ?>"><i class="bi bi-telephone"></i> <?= e(setting('phone')) ?></a><?php endif; ?>
+          <a class="btn btn-primary" href="contact.php">Contact us <i class="bi bi-arrow-right"></i></a>
+        </div>
       </div>
-      <form class="contact-form reveal" id="contactForm" method="post" action="contact.php" novalidate>
-        <?= csrf_field() ?>
-        <div class="form-alert" id="formAlert" role="status" aria-live="polite">
-          <?php foreach ($flashes as $f): ?>
-            <div class="alert alert-<?= e($f['type']) ?>"><?= e($f['message']) ?></div>
-          <?php endforeach; ?>
-        </div>
-        <div class="hp" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
-        <div class="row-2">
-          <label>Full name *<input type="text" name="name" required maxlength="100" value="<?= e($old['name'] ?? '') ?>"></label>
-          <label>Email *<input type="email" name="email" required maxlength="150" value="<?= e($old['email'] ?? '') ?>"></label>
-        </div>
-        <div class="row-2">
-          <label>Phone<input type="tel" name="phone" maxlength="40" value="<?= e($old['phone'] ?? '') ?>"></label>
-          <label>Subject
-            <select name="subject">
-              <option value="General question">General question</option>
-              <?php foreach ($categories as $c): ?>
-                <option value="<?= e($c['title']) ?>" <?= ($old['subject'] ?? '') === $c['title'] ? 'selected' : '' ?>><?= e($c['title']) ?></option>
-              <?php endforeach; ?>
-            </select>
-          </label>
-        </div>
-        <label>Message *<textarea name="message" rows="5" required minlength="10" maxlength="5000"><?= e($old['message'] ?? '') ?></textarea></label>
-        <button type="submit" class="btn btn-primary btn-block"><span>Send message</span> <i class="bi bi-send"></i></button>
-      </form>
     </div>
   </section>
 <?php site_footer();

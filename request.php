@@ -134,7 +134,7 @@ site_header('Request a Service', 'request', 'Request a government service and re
       <div class="done-card">
         <div class="done-icon muted-icon"><i class="bi bi-pause-circle"></i></div>
         <p>Online requests are currently closed. Please contact us or visit our office.</p>
-        <a class="btn btn-primary" href="index.php#contact">Contact us</a>
+        <a class="btn btn-primary" href="contact.php">Contact us</a>
       </div>
     <?php else: ?>
       <form class="contact-form request-form" method="post" action="request.php" novalidate data-validate>

@@ -33,7 +33,7 @@ function site_header(string $title, string $active = '', string $description = '
         'about'    => ['about.php', 'About'],
         'services' => ['services.php', 'Services'],
         'track'    => ['track.php', 'Track Request'],
-        'contact'  => ['index.php#contact', 'Contact'],
+        'contact'  => ['contact.php', 'Contact'],
     ];
     $requestsOn = setting('requests_enabled', '1') === '1';
     ?><!doctype html>
@@ -135,6 +135,7 @@ function site_footer(): void
       <?php if (setting('requests_enabled', '1') === '1'): ?><a href="request.php">Request a service</a><?php endif; ?>
       <a href="track.php">Track a request</a>
       <a href="index.php#faq">FAQ</a>
+      <a href="contact.php">Contact us</a>
     </div>
     <div>
       <h4>Contact us</h4>
@@ -146,7 +147,8 @@ function site_footer(): void
       </ul>
     </div>
   </div>
-  <div class="container copyright">© <?= date('Y') ?> <?= e($siteName) ?> · <?= e(setting('slogan', 'One Office – Many Services')) ?></div>
+  <div class="container copyright">© <?= date('Y') ?> <?= e($siteName) ?> · <?= e(setting('slogan', 'One Office – Many Services')) ?>
+    · <a href="admin/" class="admin-link" rel="nofollow"><i class="bi bi-shield-lock"></i> Admin login</a></div>
 </footer>
 
 <?php if ($wa !== ''): ?>

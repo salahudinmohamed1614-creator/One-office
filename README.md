@@ -3,6 +3,7 @@
 Hal Xafiis – Adeegyo Badan. Website (PHP + MySQL + HTML/CSS/JS) oo leh admin panel iyo nidaam codsiyo + Tracking Number.
 
 **Demo (GitHub Pages):** https://salahudinmohamed1614-creator.github.io/One-office/
+**Backend (admin panel):** `http://localhost/oneoffice/admin/` (XAMPP) · demo info page: https://salahudinmohamed1614-creator.github.io/One-office/admin.html · code: [`admin/`](admin/)
 Demo-gu waa HTML taagan (`docs/`): foomamka, tracking-ka iyo admin-ku waxay ku shaqeeyaan nooca PHP oo keliya.
 Dib u dhis demo-ga: `php tools/build-demo.php http://localhost/oneoffice`
 
