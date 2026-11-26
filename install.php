@@ -11,7 +11,9 @@ $errors = [];
 $done = false;
 $locked = false;
 
-// Connect to server first, create the database if needed
+// Create the database if it does not exist yet (local XAMPP).
+// On shared hosting (cPanel, InfinityFree) the database is created in the control panel
+// and the user may not be allowed to run CREATE DATABASE, so a failure here is ignored.
 try {
     $server = new PDO(
         sprintf('mysql:host=%s;port=%s;charset=utf8mb4', DB_HOST, DB_PORT),
@@ -20,6 +22,10 @@ try {
         [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
     );
     $server->exec('CREATE DATABASE IF NOT EXISTS `' . str_replace('`', '', DB_NAME) . '` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci');
+} catch (Throwable $ex) {
+    // ignore – we try to connect to the existing database below
+}
+try {
     $pdo = db();
     run_sql_file($pdo, __DIR__ . '/database/schema.sql');
     $locked = (int) $pdo->query('SELECT COUNT(*) FROM admins')->fetchColumn() > 0;
