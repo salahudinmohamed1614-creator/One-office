@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>FAQ · ONE OFFICE Admin</title>
+<link rel="icon" type="image/png" href="../assets/img/favicon.png?v=1795682024">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="../assets/css/admin.css?v=1795682772">
+</head>
+<body class="admin">
+<div class="demo-banner" role="note"><i class="bi bi-info-circle"></i> Admin panel demo with sample data – saving changes works only in the full PHP version.</div>
+<aside class="sidebar" id="sidebar">
+  <a href="index.html" class="brand">
+    <img src="../assets/img/logo-mark.png?v=1795682024" alt="" width="40" height="40">
+    <span><b>ONE OFFICE</b><small>Admin panel</small></span>
+  </a>
+  <nav>
+          <p class="nav-label">Overview</p>
+              <a href="index.html" class="">
+          <i class="bi bi-speedometer2"></i><span>Dashboard</span>
+                  </a>
+              <a href="requests.html" class="">
+          <i class="bi bi-clipboard-check"></i><span>Service requests</span>
+          <b class="count">4</b>        </a>
+              <a href="messages.html" class="">
+          <i class="bi bi-inbox"></i><span>Messages</span>
+                  </a>
+                <p class="nav-label">Website content</p>
+              <a href="manage-t-categories.html" class="">
+          <i class="bi bi-collection"></i><span>Service categories</span>
+                  </a>
+              <a href="manage-t-services.html" class="">
+          <i class="bi bi-grid"></i><span>Services</span>
+                  </a>
+              <a href="manage-t-faqs.html" class="active">
+          <i class="bi bi-question-circle"></i><span>FAQ</span>
+                  </a>
+              <a href="manage-t-testimonials.html" class="">
+          <i class="bi bi-chat-quote"></i><span>Testimonials</span>
+                  </a>
+                <p class="nav-label">System</p>
+              <a href="settings.html" class="">
+          <i class="bi bi-sliders"></i><span>Site settings</span>
+                  </a>
+              <a href="password.html" class="">
+          <i class="bi bi-shield-lock"></i><span>Change password</span>
+                  </a>
+            </nav>
+  <div class="sidebar-foot">
+    <a href="../index.html" target="_blank"><i class="bi bi-box-arrow-up-right"></i><span>View website</span></a>
+    <form method="post" action="#"><button type="submit"><i class="bi bi-box-arrow-left"></i><span>Log out</span></button></form>
+  </div>
+</aside>
+<div class="backdrop" id="backdrop"></div>
+<div class="main">
+  <header class="topbar">
+    <button class="icon-btn" id="sideToggle" aria-label="Menu"><i class="bi bi-list"></i></button>
+    <h1>FAQ</h1>
+    <a href="requests-action-new.html" class="btn btn-accent btn-sm hide-xs"><i class="bi bi-plus-lg"></i> New request</a>
+    <div class="user"><div class="avatar-sm">DA</div><span>Demo Admin</span></div>
+  </header>
+  <div class="content">
+    <div class="panel form-panel">
+  <div class="panel-head">
+    <h2>Edit question</h2>
+    <a href="manage-t-faqs.html" class="link"><i class="bi bi-arrow-left"></i> Back</a>
+  </div>
+    <form method="post" enctype="multipart/form-data" class="form" action="#">
+        <input type="hidden" name="action" value="save">
+    <input type="hidden" name="id" value="6">
+                  <label>Question          <input type="text" name="question" value="Do you help new businesses or projects?" required             maxlength="255">
+        </label>
+                        <label>Answer<textarea name="answer" rows="4" required maxlength="3000">Yes. Our Business Support &amp; Advisory team helps with Concept Notes, Company Profiles, Business Plans, SOPs, office and staff setup, all the way to the official launch.</textarea></label>
+                        <label>Sort order          <input type="number" name="sort_order" value="6"              >
+        </label>
+                        <label class="switch"><input type="checkbox" name="is_active" value="1" checked><span></span>Visible on website</label>
+              <div class="form-actions">
+      <button class="btn btn-primary" type="submit"><i class="bi bi-check2"></i> Save</button>
+      <a href="manage-t-faqs.html" class="btn btn-ghost">Cancel</a>
+    </div>
+  </form>
+</div>
+  </div>
+</div>
+<script src="../assets/js/admin.js?v=1795682719"></script>
+<script src="../assets/js/demo.js"></script>
+</body>
+</html>

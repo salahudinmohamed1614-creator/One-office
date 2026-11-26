@@ -1,0 +1,1215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Services · ONE OFFICE Admin</title>
+<link rel="icon" type="image/png" href="../assets/img/favicon.png?v=1795682024">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="../assets/css/admin.css?v=1795682772">
+</head>
+<body class="admin">
+<div class="demo-banner" role="note"><i class="bi bi-info-circle"></i> Admin panel demo with sample data – saving changes works only in the full PHP version.</div>
+<aside class="sidebar" id="sidebar">
+  <a href="index.html" class="brand">
+    <img src="../assets/img/logo-mark.png?v=1795682024" alt="" width="40" height="40">
+    <span><b>ONE OFFICE</b><small>Admin panel</small></span>
+  </a>
+  <nav>
+          <p class="nav-label">Overview</p>
+              <a href="index.html" class="">
+          <i class="bi bi-speedometer2"></i><span>Dashboard</span>
+                  </a>
+              <a href="requests.html" class="">
+          <i class="bi bi-clipboard-check"></i><span>Service requests</span>
+          <b class="count">4</b>        </a>
+              <a href="messages.html" class="">
+          <i class="bi bi-inbox"></i><span>Messages</span>
+          <b class="count">2</b>        </a>
+                <p class="nav-label">Website content</p>
+              <a href="manage-t-categories.html" class="">
+          <i class="bi bi-collection"></i><span>Service categories</span>
+                  </a>
+              <a href="manage-t-services.html" class="active">
+          <i class="bi bi-grid"></i><span>Services</span>
+                  </a>
+              <a href="manage-t-faqs.html" class="">
+          <i class="bi bi-question-circle"></i><span>FAQ</span>
+                  </a>
+              <a href="manage-t-testimonials.html" class="">
+          <i class="bi bi-chat-quote"></i><span>Testimonials</span>
+                  </a>
+                <p class="nav-label">System</p>
+              <a href="settings.html" class="">
+          <i class="bi bi-sliders"></i><span>Site settings</span>
+                  </a>
+              <a href="password.html" class="">
+          <i class="bi bi-shield-lock"></i><span>Change password</span>
+                  </a>
+            </nav>
+  <div class="sidebar-foot">
+    <a href="../index.html" target="_blank"><i class="bi bi-box-arrow-up-right"></i><span>View website</span></a>
+    <form method="post" action="#"><button type="submit"><i class="bi bi-box-arrow-left"></i><span>Log out</span></button></form>
+  </div>
+</aside>
+<div class="backdrop" id="backdrop"></div>
+<div class="main">
+  <header class="topbar">
+    <button class="icon-btn" id="sideToggle" aria-label="Menu"><i class="bi bi-list"></i></button>
+    <h1>Services</h1>
+    <a href="requests-action-new.html" class="btn btn-accent btn-sm hide-xs"><i class="bi bi-plus-lg"></i> New request</a>
+    <div class="user"><div class="avatar-sm">DA</div><span>Demo Admin</span></div>
+  </header>
+  <div class="content">
+    <div class="panel">
+  <div class="panel-head">
+    <h2>49 services</h2>
+    <a href="manage-action-new-t-services.html" class="btn btn-primary btn-sm"><i class="bi bi-plus-lg"></i> Add service</a>
+  </div>
+    <div class="table-wrap">
+    <table class="table">
+      <thead><tr>
+        <th>Icon</th><th>Title</th><th>Category</th><th>Sort order</th><th>Visible on website</th>        <th class="right">Actions</th>
+      </tr></thead>
+      <tbody>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-building-add"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Company &amp; business registration            </td>
+                      <td data-label="Category">
+              <span class="chip">Companies &amp; Institutions</span>
+                          </td>
+                      <td data-label="Sort order">
+              1            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="1">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-1-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="1">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-file-earmark-check"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Business licenses            </td>
+                      <td data-label="Category">
+              <span class="chip">Companies &amp; Institutions</span>
+                          </td>
+                      <td data-label="Sort order">
+              2            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="2">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-2-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="2">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-arrow-repeat"></i></span>
+                          </td>
+                      <td data-label="Title">
+              License renewal            </td>
+                      <td data-label="Category">
+              <span class="chip">Companies &amp; Institutions</span>
+                          </td>
+                      <td data-label="Sort order">
+              3            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="3">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-3-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="3">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-receipt"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Tax Registration            </td>
+                      <td data-label="Category">
+              <span class="chip">Companies &amp; Institutions</span>
+                          </td>
+                      <td data-label="Sort order">
+              4            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="4">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-4-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="4">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-patch-check"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Tax Clearance Certificate            </td>
+                      <td data-label="Category">
+              <span class="chip">Companies &amp; Institutions</span>
+                          </td>
+                      <td data-label="Sort order">
+              5            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="5">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-5-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="5">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-cash-coin"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Government tax payments            </td>
+                      <td data-label="Category">
+              <span class="chip">Companies &amp; Institutions</span>
+                          </td>
+                      <td data-label="Sort order">
+              6            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="6">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-6-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="6">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-file-earmark-text"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Tax receipts &amp; documents            </td>
+                      <td data-label="Category">
+              <span class="chip">Companies &amp; Institutions</span>
+                          </td>
+                      <td data-label="Sort order">
+              7            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="7">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-7-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="7">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-clipboard-check"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Business compliance documents            </td>
+                      <td data-label="Category">
+              <span class="chip">Companies &amp; Institutions</span>
+                          </td>
+                      <td data-label="Sort order">
+              8            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="8">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-8-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="8">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-shield-check"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Company document certification            </td>
+                      <td data-label="Category">
+              <span class="chip">Companies &amp; Institutions</span>
+                          </td>
+                      <td data-label="Sort order">
+              9            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="9">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-9-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="9">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-pen"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Contract certification            </td>
+                      <td data-label="Category">
+              <span class="chip">Companies &amp; Institutions</span>
+                          </td>
+                      <td data-label="Sort order">
+              10            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="10">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-10-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="10">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-bank2"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Court documents            </td>
+                      <td data-label="Category">
+              <span class="chip">Companies &amp; Institutions</span>
+                          </td>
+                      <td data-label="Sort order">
+              11            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="11">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-11-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="11">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-send-check"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Court document submission &amp; follow-up            </td>
+                      <td data-label="Category">
+              <span class="chip">Companies &amp; Institutions</span>
+                          </td>
+                      <td data-label="Sort order">
+              12            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="12">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-12-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="12">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-folder-check"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Institutional documents            </td>
+                      <td data-label="Category">
+              <span class="chip">Companies &amp; Institutions</span>
+                          </td>
+                      <td data-label="Sort order">
+              13            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="13">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-13-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="13">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-truck"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Document collection &amp; delivery            </td>
+                      <td data-label="Category">
+              <span class="chip">Companies &amp; Institutions</span>
+                          </td>
+                      <td data-label="Sort order">
+              14            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="14">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-14-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="14">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-award"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Secondary school certificate            </td>
+                      <td data-label="Category">
+              <span class="chip">Education</span>
+                          </td>
+                      <td data-label="Sort order">
+              1            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="15">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-15-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="15">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-patch-check"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Certificate verification            </td>
+                      <td data-label="Category">
+              <span class="chip">Education</span>
+                          </td>
+                      <td data-label="Sort order">
+              2            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="16">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-16-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="16">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-stamp"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Education certificate certification            </td>
+                      <td data-label="Category">
+              <span class="chip">Education</span>
+                          </td>
+                      <td data-label="Sort order">
+              3            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="17">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-17-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="17">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-journal-text"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Academic documents            </td>
+                      <td data-label="Category">
+              <span class="chip">Education</span>
+                          </td>
+                      <td data-label="Sort order">
+              4            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="18">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-18-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="18">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-arrow-counterclockwise"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Lost certificates            </td>
+                      <td data-label="Category">
+              <span class="chip">Education</span>
+                          </td>
+                      <td data-label="Sort order">
+              5            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="19">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-19-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="19">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-clipboard-data"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Exam results verification            </td>
+                      <td data-label="Category">
+              <span class="chip">Education</span>
+                          </td>
+                      <td data-label="Sort order">
+              6            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="20">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-20-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="20">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-balloon-heart"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Birth certificate            </td>
+                      <td data-label="Category">
+              <span class="chip">Civil Documents</span>
+                          </td>
+                      <td data-label="Sort order">
+              1            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="21">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-21-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="21">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-heart"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Marriage certificate            </td>
+                      <td data-label="Category">
+              <span class="chip">Civil Documents</span>
+                          </td>
+                      <td data-label="Sort order">
+              2            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="22">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-22-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="22">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-file-earmark-medical"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Death certificate            </td>
+                      <td data-label="Category">
+              <span class="chip">Civil Documents</span>
+                          </td>
+                      <td data-label="Sort order">
+              3            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="23">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-23-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="23">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-envelope-paper"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Official letters &amp; records            </td>
+                      <td data-label="Category">
+              <span class="chip">Civil Documents</span>
+                          </td>
+                      <td data-label="Sort order">
+              4            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="24">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-24-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="24">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-shield-check"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Document verification            </td>
+                      <td data-label="Category">
+              <span class="chip">Civil Documents</span>
+                          </td>
+                      <td data-label="Sort order">
+              5            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="25">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-25-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="25">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-passport"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Passport applications            </td>
+                      <td data-label="Category">
+              <span class="chip">Passport &amp; Travel</span>
+                          </td>
+                      <td data-label="Sort order">
+              1            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="26">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-26-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="26">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-file-earmark-person"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Visa documents            </td>
+                      <td data-label="Category">
+              <span class="chip">Passport &amp; Travel</span>
+                          </td>
+                      <td data-label="Sort order">
+              2            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="27">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-27-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="27">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-flag"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Embassy services            </td>
+                      <td data-label="Category">
+              <span class="chip">Passport &amp; Travel</span>
+                          </td>
+                      <td data-label="Sort order">
+              3            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="28">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-28-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="28">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-stamp"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Certification &amp; legalization            </td>
+                      <td data-label="Category">
+              <span class="chip">Passport &amp; Travel</span>
+                          </td>
+                      <td data-label="Sort order">
+              4            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="29">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-29-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="29">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-award"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Certificate issuance            </td>
+                      <td data-label="Category">
+              <span class="chip">Diaspora Services</span>
+                          </td>
+                      <td data-label="Sort order">
+              1            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="30">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-30-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="30">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-patch-check"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Certificate verification            </td>
+                      <td data-label="Category">
+              <span class="chip">Diaspora Services</span>
+                          </td>
+                      <td data-label="Sort order">
+              2            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="31">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-31-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="31">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-bank2"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Court documents            </td>
+                      <td data-label="Category">
+              <span class="chip">Diaspora Services</span>
+                          </td>
+                      <td data-label="Sort order">
+              3            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="32">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-32-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="32">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-person-vcard"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Civil documents            </td>
+                      <td data-label="Category">
+              <span class="chip">Diaspora Services</span>
+                          </td>
+                      <td data-label="Sort order">
+              4            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="33">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-33-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="33">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-receipt"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Tax documents            </td>
+                      <td data-label="Category">
+              <span class="chip">Diaspora Services</span>
+                          </td>
+                      <td data-label="Sort order">
+              5            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="34">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-34-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="34">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-building-add"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Business registration            </td>
+                      <td data-label="Category">
+              <span class="chip">Diaspora Services</span>
+                          </td>
+                      <td data-label="Sort order">
+              6            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="35">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-35-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="35">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-file-earmark-check"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Business licenses            </td>
+                      <td data-label="Category">
+              <span class="chip">Diaspora Services</span>
+                          </td>
+                      <td data-label="Sort order">
+              7            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="36">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-36-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="36">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-envelope-paper"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Government letters            </td>
+                      <td data-label="Category">
+              <span class="chip">Diaspora Services</span>
+                          </td>
+                      <td data-label="Sort order">
+              8            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="37">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-37-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="37">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-passport"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Somali Visa            </td>
+                      <td data-label="Category">
+              <span class="chip">Diaspora Services</span>
+                          </td>
+                      <td data-label="Sort order">
+              9            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="38">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-38-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="38">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-truck"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Document delivery            </td>
+                      <td data-label="Category">
+              <span class="chip">Diaspora Services</span>
+                          </td>
+                      <td data-label="Sort order">
+              10            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="39">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-39-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="39">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-lightbulb"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Concept Note            </td>
+                      <td data-label="Category">
+              <span class="chip">Business Support &amp; Advisory</span>
+                          </td>
+                      <td data-label="Sort order">
+              1            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="40">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-40-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="40">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-journal-richtext"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Company Profile            </td>
+                      <td data-label="Category">
+              <span class="chip">Business Support &amp; Advisory</span>
+                          </td>
+                      <td data-label="Sort order">
+              2            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="41">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-41-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="41">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-easel"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Professional Presentation            </td>
+                      <td data-label="Category">
+              <span class="chip">Business Support &amp; Advisory</span>
+                          </td>
+                      <td data-label="Sort order">
+              3            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="42">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-42-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="42">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-diagram-3"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Government Service Mapping            </td>
+                      <td data-label="Category">
+              <span class="chip">Business Support &amp; Advisory</span>
+                          </td>
+                      <td data-label="Sort order">
+              4            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="43">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-43-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="43">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-people"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Government Relationships &amp; Focal Points            </td>
+                      <td data-label="Category">
+              <span class="chip">Business Support &amp; Advisory</span>
+                          </td>
+                      <td data-label="Sort order">
+              5            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="44">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-44-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="44">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-list-check"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Service SOPs &amp; Pricing            </td>
+                      <td data-label="Category">
+              <span class="chip">Business Support &amp; Advisory</span>
+                          </td>
+                      <td data-label="Sort order">
+              6            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="45">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-45-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="45">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-calculator"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Startup Budget &amp; Business Plan            </td>
+                      <td data-label="Category">
+              <span class="chip">Business Support &amp; Advisory</span>
+                          </td>
+                      <td data-label="Sort order">
+              7            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="46">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-46-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="46">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-pc-display"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Office &amp; Staff Setup            </td>
+                      <td data-label="Category">
+              <span class="chip">Business Support &amp; Advisory</span>
+                          </td>
+                      <td data-label="Sort order">
+              8            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="47">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-47-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="47">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-clipboard2-pulse"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Pilot Services            </td>
+                      <td data-label="Category">
+              <span class="chip">Business Support &amp; Advisory</span>
+                          </td>
+                      <td data-label="Sort order">
+              9            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="48">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-48-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="48">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+              <tr>
+                      <td data-label="Icon">
+              <span class="icon-chip"><i class="bi bi-rocket-takeoff"></i></span>
+                          </td>
+                      <td data-label="Title">
+              Official Launch &amp; Expansion            </td>
+                      <td data-label="Category">
+              <span class="chip">Business Support &amp; Advisory</span>
+                          </td>
+                      <td data-label="Sort order">
+              10            </td>
+                      <td data-label="Visible on website">
+                              <form method="post" action="#" class="inline"><input type="hidden" name="action" value="toggle"><input type="hidden" name="id" value="49">
+                  <button type="submit" class="status on" title="Click to toggle">Visible</button></form>
+                          </td>
+                    <td class="right actions">
+            <a href="manage-action-edit-id-49-t-services.html" class="icon-btn" title="Edit"><i class="bi bi-pencil"></i></a>
+            <form method="post" action="#" class="inline" data-confirm="Delete this service? This cannot be undone.">
+              <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="49">
+              <button type="submit" class="icon-btn danger" title="Delete"><i class="bi bi-trash"></i></button>
+            </form>
+          </td>
+        </tr>
+            </tbody>
+    </table>
+  </div>
+  </div>
+  </div>
+</div>
+<script src="../assets/js/admin.js?v=1795682719"></script>
+<script src="../assets/js/demo.js"></script>
+</body>
+</html>

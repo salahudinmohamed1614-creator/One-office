@@ -14,6 +14,11 @@
     var form = e.target;
     e.preventDefault();
     e.stopImmediatePropagation();
+    // demo admin login: go straight to the dashboard
+    if (form.getAttribute('data-demo-go')) {
+      window.location.href = form.getAttribute('data-demo-go');
+      return;
+    }
     var msg = form.querySelector('.demo-msg');
     if (!msg) {
       msg = document.createElement('p');

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Service requests · ONE OFFICE Admin</title>
+<link rel="icon" type="image/png" href="../assets/img/favicon.png?v=1795682024">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="../assets/css/admin.css?v=1795682772">
+</head>
+<body class="admin">
+<div class="demo-banner" role="note"><i class="bi bi-info-circle"></i> Admin panel demo with sample data – saving changes works only in the full PHP version.</div>
+<aside class="sidebar" id="sidebar">
+  <a href="index.html" class="brand">
+    <img src="../assets/img/logo-mark.png?v=1795682024" alt="" width="40" height="40">
+    <span><b>ONE OFFICE</b><small>Admin panel</small></span>
+  </a>
+  <nav>
+          <p class="nav-label">Overview</p>
+              <a href="index.html" class="">
+          <i class="bi bi-speedometer2"></i><span>Dashboard</span>
+                  </a>
+              <a href="requests.html" class="active">
+          <i class="bi bi-clipboard-check"></i><span>Service requests</span>
+          <b class="count">4</b>        </a>
+              <a href="messages.html" class="">
+          <i class="bi bi-inbox"></i><span>Messages</span>
+          <b class="count">2</b>        </a>
+                <p class="nav-label">Website content</p>
+              <a href="manage-t-categories.html" class="">
+          <i class="bi bi-collection"></i><span>Service categories</span>
+                  </a>
+              <a href="manage-t-services.html" class="">
+          <i class="bi bi-grid"></i><span>Services</span>
+                  </a>
+              <a href="manage-t-faqs.html" class="">
+          <i class="bi bi-question-circle"></i><span>FAQ</span>
+                  </a>
+              <a href="manage-t-testimonials.html" class="">
+          <i class="bi bi-chat-quote"></i><span>Testimonials</span>
+                  </a>
+                <p class="nav-label">System</p>
+              <a href="settings.html" class="">
+          <i class="bi bi-sliders"></i><span>Site settings</span>
+                  </a>
+              <a href="password.html" class="">
+          <i class="bi bi-shield-lock"></i><span>Change password</span>
+                  </a>
+            </nav>
+  <div class="sidebar-foot">
+    <a href="../index.html" target="_blank"><i class="bi bi-box-arrow-up-right"></i><span>View website</span></a>
+    <form method="post" action="#"><button type="submit"><i class="bi bi-box-arrow-left"></i><span>Log out</span></button></form>
+  </div>
+</aside>
+<div class="backdrop" id="backdrop"></div>
+<div class="main">
+  <header class="topbar">
+    <button class="icon-btn" id="sideToggle" aria-label="Menu"><i class="bi bi-list"></i></button>
+    <h1>Service requests</h1>
+    <a href="requests-action-new.html" class="btn btn-accent btn-sm hide-xs"><i class="bi bi-plus-lg"></i> New request</a>
+    <div class="user"><div class="avatar-sm">DA</div><span>Demo Admin</span></div>
+  </header>
+  <div class="content">
+    <div class="panel">
+  <div class="panel-head wrap">
+    <div class="tabs scroll">
+      <a href="requests.html" class="">All <b class="num">22</b></a>
+              <a href="requests-status-received.html" class="">Received <b class="num">4</b></a>
+              <a href="requests-status-preparing.html" class="">Preparing documents <b class="num">3</b></a>
+              <a href="requests-status-needs-info.html" class="">Action needed <b class="num">2</b></a>
+              <a href="requests-status-submitted.html" class="">Submitted to institution <b class="num">3</b></a>
+              <a href="requests-status-ready.html" class="">Ready / collected <b class="num">3</b></a>
+              <a href="requests-status-delivered.html" class="active">Delivered <b class="num">6</b></a>
+              <a href="requests-status-cancelled.html" class="">Cancelled <b class="num">1</b></a>
+          </div>
+  </div>
+  <div class="panel-head wrap">
+    <form method="get" class="search">
+      <input type="hidden" name="status" value="delivered">      <i class="bi bi-search"></i><input type="search" name="q" value="" placeholder="Tracking no., name, phone, service…">
+    </form>
+    <a href="requests-action-new.html" class="btn btn-primary btn-sm"><i class="bi bi-plus-lg"></i> New request</a>
+  </div>
+
+      <div class="table-wrap">
+      <table class="table">
+        <thead><tr><th>Tracking no.</th><th>Customer</th><th>Service</th><th>Status</th><th class="right">Total / paid</th><th>Date</th><th></th></tr></thead>
+        <tbody>
+                      <tr class="row-link" data-href="requests-id-10.html">
+              <td data-label="Tracking"><a class="mono strong" href="requests-id-10.html">OO-261119-AHQX</a></td>
+              <td data-label="Customer"><b>Ilays Tech Solutions</b><br><small class="muted">+252 61 000 0109</small></td>
+              <td data-label="Service">Academic documents<br><small class="muted">Education</small></td>
+              <td data-label="Status"><span class="st st-delivered"><i class="bi bi-check2-circle"></i> Delivered</span></td>
+              <td data-label="Total / paid" class="right">$40<br><small class="muted">$40 paid</small></td>
+              <td data-label="Date">Nov 19, 2026</td>
+              <td class="right actions"><a href="requests-id-10.html" class="icon-btn" title="Open"><i class="bi bi-chevron-right"></i></a></td>
+            </tr>
+                      <tr class="row-link" data-href="requests-id-6.html">
+              <td data-label="Tracking"><a class="mono strong" href="requests-id-6.html">OO-261117-W5CK</a></td>
+              <td data-label="Customer"><b>Hiil Relief Organization</b><br><small class="muted">+252 61 000 0105</small></td>
+              <td data-label="Service">Document delivery<br><small class="muted">Diaspora Services</small></td>
+              <td data-label="Status"><span class="st st-delivered"><i class="bi bi-check2-circle"></i> Delivered</span></td>
+              <td data-label="Total / paid" class="right">$80<br><small class="muted">$80 paid</small></td>
+              <td data-label="Date">Nov 17, 2026</td>
+              <td class="right actions"><a href="requests-id-6.html" class="icon-btn" title="Open"><i class="bi bi-chevron-right"></i></a></td>
+            </tr>
+                      <tr class="row-link" data-href="requests-id-5.html">
+              <td data-label="Tracking"><a class="mono strong" href="requests-id-5.html">OO-261116-KSZ8</a></td>
+              <td data-label="Customer"><b>Hawa Ismail Farah</b><br><small class="muted">+252 61 000 0104</small></td>
+              <td data-label="Service">Court documents<br><small class="muted">Diaspora Services</small></td>
+              <td data-label="Status"><span class="st st-delivered"><i class="bi bi-check2-circle"></i> Delivered</span></td>
+              <td data-label="Total / paid" class="right">$40<br><small class="muted">$40 paid</small></td>
+              <td data-label="Date">Nov 16, 2026</td>
+              <td class="right actions"><a href="requests-id-5.html" class="icon-btn" title="Open"><i class="bi bi-chevron-right"></i></a></td>
+            </tr>
+                      <tr class="row-link" data-href="requests-id-3.html">
+              <td data-label="Tracking"><a class="mono strong" href="requests-id-3.html">OO-261114-V4BJ</a></td>
+              <td data-label="Customer"><b>Barwaaqo Trading Co.</b><br><small class="muted">+252 61 000 0102</small></td>
+              <td data-label="Service">Academic documents<br><small class="muted">Education</small></td>
+              <td data-label="Status"><span class="st st-delivered"><i class="bi bi-check2-circle"></i> Delivered</span></td>
+              <td data-label="Total / paid" class="right">$75<br><small class="muted">$75 paid</small></td>
+              <td data-label="Date">Nov 14, 2026</td>
+              <td class="right actions"><a href="requests-id-3.html" class="icon-btn" title="Open"><i class="bi bi-chevron-right"></i></a></td>
+            </tr>
+                      <tr class="row-link" data-href="requests-id-2.html">
+              <td data-label="Tracking"><a class="mono strong" href="requests-id-2.html">OO-261114-JRY7</a></td>
+              <td data-label="Customer"><b>Fadumo Abdi Nur</b><br><small class="muted">+252 61 000 0101</small></td>
+              <td data-label="Service">Court documents<br><small class="muted">Companies &amp; Institutions</small></td>
+              <td data-label="Status"><span class="st st-delivered"><i class="bi bi-check2-circle"></i> Delivered</span></td>
+              <td data-label="Total / paid" class="right">$55<br><small class="muted">$55 paid</small></td>
+              <td data-label="Date">Nov 14, 2026</td>
+              <td class="right actions"><a href="requests-id-2.html" class="icon-btn" title="Open"><i class="bi bi-chevron-right"></i></a></td>
+            </tr>
+                      <tr class="row-link" data-href="requests-id-1.html">
+              <td data-label="Tracking"><a class="mono strong" href="requests-id-1.html">OO-261113-7EMU</a></td>
+              <td data-label="Customer"><b>Ahmed Hassan Ali</b><br><small class="muted">+252 61 000 0100</small></td>
+              <td data-label="Service">Tax Registration<br><small class="muted">Companies &amp; Institutions</small></td>
+              <td data-label="Status"><span class="st st-delivered"><i class="bi bi-check2-circle"></i> Delivered</span></td>
+              <td data-label="Total / paid" class="right">$35<br><small class="muted">$35 paid</small></td>
+              <td data-label="Date">Nov 13, 2026</td>
+              <td class="right actions"><a href="requests-id-1.html" class="icon-btn" title="Open"><i class="bi bi-chevron-right"></i></a></td>
+            </tr>
+                  </tbody>
+      </table>
+    </div>
+      </div>
+  </div>
+</div>
+<script src="../assets/js/admin.js?v=1795682719"></script>
+<script src="../assets/js/demo.js"></script>
+</body>
+</html>

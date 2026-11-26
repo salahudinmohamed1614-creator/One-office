@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Request OO-261123-Z8FN · ONE OFFICE Admin</title>
+<link rel="icon" type="image/png" href="../assets/img/favicon.png?v=1795682024">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="../assets/css/admin.css?v=1795682772">
+</head>
+<body class="admin">
+<div class="demo-banner" role="note"><i class="bi bi-info-circle"></i> Admin panel demo with sample data – saving changes works only in the full PHP version.</div>
+<aside class="sidebar" id="sidebar">
+  <a href="index.html" class="brand">
+    <img src="../assets/img/logo-mark.png?v=1795682024" alt="" width="40" height="40">
+    <span><b>ONE OFFICE</b><small>Admin panel</small></span>
+  </a>
+  <nav>
+          <p class="nav-label">Overview</p>
+              <a href="index.html" class="">
+          <i class="bi bi-speedometer2"></i><span>Dashboard</span>
+                  </a>
+              <a href="requests.html" class="active">
+          <i class="bi bi-clipboard-check"></i><span>Service requests</span>
+          <b class="count">4</b>        </a>
+              <a href="messages.html" class="">
+          <i class="bi bi-inbox"></i><span>Messages</span>
+          <b class="count">2</b>        </a>
+                <p class="nav-label">Website content</p>
+              <a href="manage-t-categories.html" class="">
+          <i class="bi bi-collection"></i><span>Service categories</span>
+                  </a>
+              <a href="manage-t-services.html" class="">
+          <i class="bi bi-grid"></i><span>Services</span>
+                  </a>
+              <a href="manage-t-faqs.html" class="">
+          <i class="bi bi-question-circle"></i><span>FAQ</span>
+                  </a>
+              <a href="manage-t-testimonials.html" class="">
+          <i class="bi bi-chat-quote"></i><span>Testimonials</span>
+                  </a>
+                <p class="nav-label">System</p>
+              <a href="settings.html" class="">
+          <i class="bi bi-sliders"></i><span>Site settings</span>
+                  </a>
+              <a href="password.html" class="">
+          <i class="bi bi-shield-lock"></i><span>Change password</span>
+                  </a>
+            </nav>
+  <div class="sidebar-foot">
+    <a href="../index.html" target="_blank"><i class="bi bi-box-arrow-up-right"></i><span>View website</span></a>
+    <form method="post" action="#"><button type="submit"><i class="bi bi-box-arrow-left"></i><span>Log out</span></button></form>
+  </div>
+</aside>
+<div class="backdrop" id="backdrop"></div>
+<div class="main">
+  <header class="topbar">
+    <button class="icon-btn" id="sideToggle" aria-label="Menu"><i class="bi bi-list"></i></button>
+    <h1>Request OO-261123-Z8FN</h1>
+    <a href="requests-action-new.html" class="btn btn-accent btn-sm hide-xs"><i class="bi bi-plus-lg"></i> New request</a>
+    <div class="user"><div class="avatar-sm">DA</div><span>Demo Admin</span></div>
+  </header>
+  <div class="content">
+        <div class="req-top">
+      <a href="requests.html" class="link"><i class="bi bi-arrow-left"></i> All requests</a>
+      <div class="actions">
+        <button type="button" class="btn btn-ghost btn-sm" data-print><i class="bi bi-printer"></i> Print</button>
+        <form method="post" class="inline" data-confirm="Delete request OO-261123-Z8FN and its history? This cannot be undone.">
+          <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="15">
+          <button class="btn btn-danger btn-sm" type="submit"><i class="bi bi-trash"></i> Delete</button>
+        </form>
+      </div>
+    </div>
+
+    <section class="panel req-hero">
+      <div>
+        <small class="muted">Tracking number</small>
+        <div class="track-no">OO-261123-Z8FN</div>
+        <p class="muted small">Created Nov 23, 2026 14:02 · via Website · updated Nov 23, 14:02</p>
+      </div>
+      <span class="st st-preparing"><i class="bi bi-folder2-open"></i> Preparing documents</span>    </section>
+
+    <div class="two-col wide-left">
+      <div>
+        <section class="panel">
+          <div class="panel-head"><h2><i class="bi bi-file-earmark-text"></i> Request</h2></div>
+          <dl class="details">
+            <div><dt>Service</dt><dd><b>Tax Registration</b></dd></div>
+            <div><dt>Category</dt><dd>Companies &amp; Institutions</dd></div>
+            <div><dt>Customer type</dt><dd>company</dd></div>
+            <div class="full"><dt>Customer’s details</dt><dd>Sample request for the demo preview.</dd></div>
+          </dl>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head"><h2><i class="bi bi-arrow-repeat"></i> Update status</h2></div>
+          <form method="post" class="form" action="#">
+            <input type="hidden" name="action" value="status"><input type="hidden" name="id" value="15">
+            <div class="status-pick">
+                              <label><input type="radio" name="status" value="received" ><span class="st st-received"><i class="bi bi-inbox"></i> Received</span></label>
+                              <label><input type="radio" name="status" value="preparing" checked><span class="st st-preparing"><i class="bi bi-folder2-open"></i> Preparing documents</span></label>
+                              <label><input type="radio" name="status" value="needs_info" ><span class="st st-needs_info"><i class="bi bi-exclamation-circle"></i> Action needed</span></label>
+                              <label><input type="radio" name="status" value="submitted" ><span class="st st-submitted"><i class="bi bi-bank"></i> Submitted to institution</span></label>
+                              <label><input type="radio" name="status" value="ready" ><span class="st st-ready"><i class="bi bi-box-seam"></i> Ready / collected</span></label>
+                              <label><input type="radio" name="status" value="delivered" ><span class="st st-delivered"><i class="bi bi-check2-circle"></i> Delivered</span></label>
+                              <label><input type="radio" name="status" value="cancelled" ><span class="st st-cancelled"><i class="bi bi-x-circle"></i> Cancelled</span></label>
+                          </div>
+            <label>Note for the customer (shown on the tracking page, optional)
+              <textarea name="note" rows="3" maxlength="2000" placeholder="e.g. Your documents have been submitted to the Ministry…"></textarea>
+            </label>
+            <div class="form-actions"><button class="btn btn-primary" type="submit"><i class="bi bi-check2"></i> Save status</button></div>
+          </form>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head"><h2><i class="bi bi-clock-history"></i> History</h2></div>
+          <ul class="history">
+                          <li>
+                <span class="st st-preparing"><i class="bi bi-folder2-open"></i> Preparing documents</span>                <time>Nov 23, 2026 23:02 · Demo Admin</time>
+                <p>We are preparing your documents.</p>              </li>
+                          <li>
+                <span class="st st-received"><i class="bi bi-inbox"></i> Received</span>                <time>Nov 23, 2026 14:02</time>
+                <p>Your request has been received. Our team will contact you shortly.</p>              </li>
+                      </ul>
+        </section>
+      </div>
+
+      <div>
+        <section class="panel">
+          <div class="panel-head"><h2><i class="bi bi-person"></i> Customer</h2></div>
+          <div class="cust">
+            <div class="avatar-sm lg">BT</div>
+            <div><b>Barwaaqo Trading Co.</b><small class="muted">KM4, Mogadishu</small></div>
+          </div>
+          <ul class="contact-actions">
+            <li><i class="bi bi-telephone"></i><a href="tel:+252610000114">+252 61 000 0114</a></li>
+            <li><i class="bi bi-whatsapp"></i><a href="https://wa.me/252610000114?text=ONE%20OFFICE%20%E2%80%93%20OO-261123-Z8FN%3A%20" target="_blank" rel="noopener">WhatsApp</a></li>                      </ul>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head"><h2><i class="bi bi-cash-stack"></i> Fees & payment</h2></div>
+          <div class="fee-summary">
+            <div><span>Total</span><b>$75</b></div>
+            <div><span>Paid</span><b class="ok-text">$0</b></div>
+            <div><span>Balance</span><b class="warn-text">$75</b></div>
+          </div>
+          <form method="post" class="form" action="#">
+            <input type="hidden" name="action" value="fees"><input type="hidden" name="id" value="15">
+                          <label>Service fee (ONE OFFICE)<input type="number" step="0.01" min="0" name="service_fee" value="45.00" placeholder="0"></label>
+                          <label>Government fee<input type="number" step="0.01" min="0" name="gov_fee" value="30.00" placeholder="0"></label>
+                          <label>Document processing fee<input type="number" step="0.01" min="0" name="processing_fee" value="" placeholder="0"></label>
+                          <label>Delivery fee<input type="number" step="0.01" min="0" name="delivery_fee" value="" placeholder="0"></label>
+                          <label>Amount paid<input type="number" step="0.01" min="0" name="amount_paid" value="" placeholder="0"></label>
+                        <label>Internal note (staff only)<textarea name="internal_note" rows="3" maxlength="5000"></textarea></label>
+            <button class="btn btn-primary" type="submit"><i class="bi bi-check2"></i> Save fees</button>
+          </form>
+        </section>
+      </div>
+    </div>
+      </div>
+</div>
+<script src="../assets/js/admin.js?v=1795682719"></script>
+<script src="../assets/js/demo.js"></script>
+</body>
+</html>

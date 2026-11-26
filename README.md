@@ -3,9 +3,14 @@
 Hal Xafiis – Adeegyo Badan. Website (PHP + MySQL + HTML/CSS/JS) oo leh admin panel iyo nidaam codsiyo + Tracking Number.
 
 **Demo (GitHub Pages):** https://salahudinmohamed1614-creator.github.io/One-office/
-**Backend (admin panel):** `http://localhost/oneoffice/admin/` (XAMPP) · demo info page: https://salahudinmohamed1614-creator.github.io/One-office/admin.html · code: [`admin/`](admin/)
-Demo-gu waa HTML taagan (`docs/`): foomamka, tracking-ka iyo admin-ku waxay ku shaqeeyaan nooca PHP oo keliya.
-Dib u dhis demo-ga: `php tools/build-demo.php http://localhost/oneoffice`
+**Admin panel demo (xog tijaabo ah):** https://salahudinmohamed1614-creator.github.io/One-office/admin/login.html · dashboard: https://salahudinmohamed1614-creator.github.io/One-office/admin/index.html
+**Backend (dhab ah):** `http://localhost/oneoffice/admin/` (XAMPP) · code: [`admin/`](admin/)
+Demo-gu waa HTML taagan (`docs/`): foomamka, tracking-ka iyo kaydinta admin-ka waxay ku shaqeeyaan nooca PHP oo keliya.
+Xogta admin demo-ga waa been-abuur (database gaar ah `one_office_demo`), xog macmiil oo dhab ah ma galayso GitHub.
+
+Dib u dhis demo-ga:
+1. Bogagga dadweynaha: `php tools/build-demo.php http://localhost/oneoffice`
+2. Admin demo: `$env:DB_NAME='one_office_demo'; php -S 127.0.0.1:8089` kadib (isla `DB_NAME`) `php tools/build-admin-demo.php http://127.0.0.1:8089`
 
 ## Shuruudaha
 - PHP 8.1+ (extensions: `pdo_mysql`, `mbstring`, `fileinfo`)

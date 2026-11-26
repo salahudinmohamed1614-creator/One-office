@@ -37,8 +37,17 @@ function copy_dir(string $from, string $to): void
     }
 }
 
-rrmdir($out);
-mkdir($out, 0755, true);
+// Empty docs/ but keep docs/admin/ (built by tools/build-admin-demo.php)
+if (is_dir($out)) {
+    foreach (new DirectoryIterator($out) as $f) {
+        if ($f->isDot() || $f->getFilename() === 'admin') {
+            continue;
+        }
+        $f->isDir() ? rrmdir($f->getPathname()) : unlink($f->getPathname());
+    }
+} else {
+    mkdir($out, 0755, true);
+}
 copy_dir($root . '/assets', $out . '/assets');
 file_put_contents($out . '/.nojekyll', '');
 
@@ -104,10 +113,16 @@ $adminPage = str_replace(' class="active" aria-current="page"', ' class=""', $ad
 file_put_contents("$out/admin.html", $adminPage);
 echo "built docs/admin.html\n";
 
-// Every page: the footer "Admin login" link goes to the info page
+// Every page: the footer "Admin login" link opens the admin demo (docs/admin/, sample data)
 foreach (glob("$out/*.html") as $file) {
-    file_put_contents($file, str_replace('href="admin/"', 'href="admin.html"', (string) file_get_contents($file)));
+    file_put_contents($file, str_replace('href="admin/"', 'href="admin/login.html"', (string) file_get_contents($file)));
 }
+// Add an "Open the admin demo" button to the info page
+file_put_contents("$out/admin.html", str_replace(
+    '<a href="' . $repo . '/tree/main/admin"',
+    '<a href="admin/login.html" class="btn btn-white"><i class="bi bi-speedometer2"></i> Open admin demo</a> <a href="' . $repo . '/tree/main/admin"',
+    (string) file_get_contents("$out/admin.html")
+));
 
 // 404 page -> home
 copy("$out/index.html", "$out/404.html");
