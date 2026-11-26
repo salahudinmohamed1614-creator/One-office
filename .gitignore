@@ -1,0 +1,11 @@
+# Files uploaded through the admin panel (keep the security .htaccess)
+uploads/*
+!uploads/.htaccess
+
+# Local / editor files
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/
