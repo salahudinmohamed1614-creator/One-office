@@ -1,6 +1,13 @@
 <?php
 declare(strict_types=1);
 
+// Shared hosting (cPanel) often defaults to an old PHP version – show a clear message instead of a blank page.
+if (PHP_VERSION_ID < 80100) {
+    http_response_code(500);
+    exit('ONE OFFICE needs PHP 8.1 or newer (this server runs PHP ' . PHP_VERSION . '). '
+        . 'In cPanel open "Select PHP Version" or "MultiPHP Manager" and choose PHP 8.1+.');
+}
+
 require_once __DIR__ . '/../config.php';
 
 ini_set('display_errors', APP_DEBUG ? '1' : '0');

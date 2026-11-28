@@ -42,6 +42,9 @@ Heerarka codsiga: Received → Preparing → (Action needed) → Submitted to in
 2. Hubi `config.php` (default: `root`, password madhan, DB `one_office`)
 3. Fur `http://localhost/oneoffice/install.php`, samee akoonka admin-ka, kadibna **tirtir `install.php`**
 
+## Online (cPanel)
+Eeg [DEPLOY-CPANEL.md](DEPLOY-CPANEL.md): PHP 8.1+, database, upload zip, `config.php`, `install.php`.
+
 ## Amniga
 - PDO prepared statements, `htmlspecialchars`, CSRF token foom kasta, bcrypt
 - Xannibaad login: 5 isku day oo khaldan → 15 daqiiqo
